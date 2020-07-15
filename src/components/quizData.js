@@ -22,7 +22,7 @@ export const quizData = [
 
   {
     id: 2,
-    question: "what thread is JavaScript",
+    question: "What thread is JavaScript",
     options: ["single thread", "multithread", "none of above"],
     answer: "single thread",
   },
@@ -44,8 +44,8 @@ export const quizData = [
     id: 4,
     question: "What does undefined value mean in javascript?",
     options: [
-      "undefine means a variable has been declared but has not yet been assigned a value",
-      "Undefine means function didn’t return any value",
+      "undefined means a variable has been declared but has not yet been assigned a value",
+      "undefined means function didn’t return any value",
       "All above",
       "None of above",
     ],

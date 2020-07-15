@@ -12,7 +12,6 @@ class MainQuiz extends React.Component {
   };
 
   loadQuizData = () => {
-    // console.log(quizData[0].question)
     this.setState(() => {
       return {
         questions: quizData[this.state.currentQuestion].question,
@@ -26,7 +25,6 @@ class MainQuiz extends React.Component {
     this.loadQuizData();
   }
   nextQuestionHandler = () => {
-    // console.log('test')
     const { myAnswer, answer, score } = this.state;
 
     if (myAnswer === answer) {
@@ -53,7 +51,7 @@ class MainQuiz extends React.Component {
       });
     }
   }
-  //check answer
+
   checkAnswer = (answer) => {
     this.setState({ myAnswer: answer, disabled: false });
   };
@@ -76,8 +74,8 @@ class MainQuiz extends React.Component {
       return (
         <div className="result">
           <h3>Your final score is {this.state.score} points </h3>
+          <p>Correct answers:</p>
           <div>
-            The correct answers were:
             {quizData.map((item, index) => (
               <div className="ui floating message options" key={index}>
                 {item.answer}
@@ -89,6 +87,7 @@ class MainQuiz extends React.Component {
     } else {
       return (
         <div className="App">
+          <h1 className="title">Quiz</h1>
           <h1>{this.state.questions} </h1>
           <span>{`Questions ${currentQuestion}  out of ${
             quizData.length - 1
@@ -106,7 +105,7 @@ class MainQuiz extends React.Component {
           ))}
           {currentQuestion < quizData.length - 1 && (
             <button
-              className="ui inverted button"
+              className="button"
               disabled={this.state.disabled}
               onClick={this.nextQuestionHandler}
             >
@@ -115,7 +114,7 @@ class MainQuiz extends React.Component {
           )}
           {/* //adding a finish button */}
           {currentQuestion === quizData.length - 1 && (
-            <button className="ui inverted button" onClick={this.finishHandler}>
+            <button className="button" onClick={this.finishHandler}>
               Finish
             </button>
           )}
