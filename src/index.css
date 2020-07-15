@@ -1,11 +1,13 @@
 body {
   margin: 0;
-  background-color: #eaefef;
+  background-color: #ddeeee;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin-top: 8em;
 }
 
 code {
@@ -16,28 +18,41 @@ code {
 h1 {
   font-family: "Quicksand", sans-serif;
   color: #5e7e84;
-  font-size: 45px;
+  font-size: 35px;
+  margin-bottom: 60px;
 }
 
 .App {
   font-family: sans-serif;
   text-align: center;
   color: #5e7e84;
-}
-
-.result {
-  margin-top: 60px;
+  color: #b89b76;
 }
 
 .options {
   cursor: pointer;
+  margin-bottom: 20px;
   font-size: 20px;
-  border: 2px solid #789094;
+  border: 4px solid white;
+  border-radius: 15px;
   padding: 10px;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 300px;
+  margin-right: 300px;
+  color: #47666b;
 }
 
 .selected {
-  background: #ddd2c4;
+  background: #e9e0d1;
+}
+
+.button {
+  background-color: #bea483;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 13px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
