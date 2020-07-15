@@ -3,7 +3,7 @@ export const quizData = [
     id: 0,
     question: "Which of the following is correct about callbacks?",
     options: [
-      "A callback is a function that passes to another function as an argument",
+      "A callback is a function that passes to another function as an argument.",
       "A callback is not a function that passes to another function as an argument",
       "None of above",
     ],
@@ -11,6 +11,7 @@ export const quizData = [
       "A callback is a function that passes to another function as an argument.",
     ],
   },
+
   {
     id: 1,
     question:
@@ -18,12 +19,14 @@ export const quizData = [
     options: ["toString()", "toFixed()", "toLocaleString()", "toPrecision()"],
     answer: "toString()",
   },
+
   {
     id: 2,
-    question: "What thread is JavaScript",
+    question: "what thread is JavaScript",
     options: ["single thread", "multithread", "none of above"],
     answer: "single thread",
   },
+
   {
     id: 3,
     question:
@@ -36,12 +39,13 @@ export const quizData = [
     ],
     answer: "test will equal 2",
   },
+
   {
     id: 4,
-    question: "What does undefined value mean in Javascript?",
+    question: "What does undefined value mean in javascript?",
     options: [
-      "undefined means a variable has been declared but has not yet been assigned a value",
-      "undefined means function didn’t return any value",
+      "undefine means a variable has been declared but has not yet been assigned a value",
+      "Undefine means function didn’t return any value",
       "All above",
       "None of above",
     ],
@@ -54,6 +58,7 @@ export const quizData = [
     options: ["Substring()", " String()", "Stringlength()", " CharAt()"],
     answer: "ChatAt()",
   },
+
   {
     id: 6,
     question:
