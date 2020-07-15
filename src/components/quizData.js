@@ -66,4 +66,64 @@ export const quizData = [
     options: ["Alert()", "Display()", " Prompt()", "Confirm()"],
     answer: "Prompt()",
   },
+  {   
+    id:7,
+    question:"How to debug JavaScript",
+    options:[
+      "Use breakpoints on Chrome DevTool","console.log()", 
+      "debugger", "All of above",
+      "None of Above" ],
+    answer:"All of above"
+},
+{   id:8,
+    question:"What is difference between agrument and parameter?",
+    options:[
+        "Agrument is a variable declare in a function, but parameter is a actual value that pass to function", 
+        "Parameter is a variable declare in a function, but agrument is a actual value that pass to function", 
+        "All of above",
+        "None of above"],
+    answer: "Parameter is a variable declare in a function, but agrument is a actual value that pass to function"
+},
+{   
+    id:9,
+    question:"setTimeOut() is executed by Web API",
+    options:["True", "False"],
+    answer: "True"
+},
+{   
+    id:10,
+    question:"Is Javascript not asynchronous",
+    options:["True", "False"],
+    answer: "False"
+},
+{   id:11,
+    question:"What is new in ES6?",
+    options:[
+        "Symbol data type", 
+        "Let and const keyword", 
+        "Arrow function", "B and C, but not A", 
+        "All of above", 
+        "None of Above"],
+    answer: "All of Above"
+},
+{   
+   id:12,
+   question:"What is lexical scope?",
+   options:[
+       "A variable can be access by all other functions ",
+       "A variable can be only determined by the region where it creates and define", 
+       "All of above", 
+       "None of above"],
+   answer: "A variable can be only determined by the region where it creates and define"
+},
+{   
+   id:13,
+   question:"What is lexical scope?",
+   options:[
+       "A variable can be access by all other functions ", 
+       "A variable can be only determined by the region where it creates and define", 
+       "All of above", "None of above"],
+   answer: "A variable can be only determined by the region where it creates and define"
+}
 ];
+
