@@ -98,19 +98,31 @@ export const quizData = [
 },
 {   id:11,
     question:"What is new in ES6?",
-    options:["Symbol data type", "Let and const keyword", "Arrow function", "B and C, but not A", "All of above", "None of Above"],
+    options:[
+        "Symbol data type", 
+        "Let and const keyword", 
+        "Arrow function", "B and C, but not A", 
+        "All of above", 
+        "None of Above"],
     answer: "All of Above"
 },
 {   
    id:12,
    question:"What is lexical scope?",
-   options:["A variable can be access by all other functions ", "A variable can be only determined by the region where it creates and define", "All of above", "None of above"],
+   options:[
+       "A variable can be access by all other functions ",
+       "A variable can be only determined by the region where it creates and define", 
+       "All of above", 
+       "None of above"],
    answer: "A variable can be only determined by the region where it creates and define"
 },
 {   
    id:13,
    question:"What is lexical scope?",
-   options:["A variable can be access by all other functions ", "A variable can be only determined by the region where it creates and define", "All of above", "None of above"],
+   options:[
+       "A variable can be access by all other functions ", 
+       "A variable can be only determined by the region where it creates and define", 
+       "All of above", "None of above"],
    answer: "A variable can be only determined by the region where it creates and define"
 }
 ];
