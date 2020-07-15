@@ -75,16 +75,14 @@ class MainQuiz extends React.Component {
     if (isEnd) {
       return (
         <div className="result">
-          <h3>Game Over your Final score is {this.state.score} points </h3>
+          <h3>Your final score is {this.state.score} points </h3>
           <div>
-            The correct answer's for the questions was
-            <ul>
-              {quizData.map((item, index) => (
-                <li className="ui floating message options" key={index}>
-                  {item.answer}
-                </li>
-              ))}
-            </ul>
+            The correct answers were:
+            {quizData.map((item, index) => (
+              <div className="ui floating message options" key={index}>
+                {item.answer}
+              </div>
+            ))}
           </div>
         </div>
       );
