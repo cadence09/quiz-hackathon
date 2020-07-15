@@ -7,7 +7,7 @@ class MainQuiz extends React.Component {
     myAnswer: null,
     options: [],
     score: 0,
-    disabled: true,
+    disabled: false,
     isEnd: false,
   };
 
@@ -24,19 +24,24 @@ class MainQuiz extends React.Component {
   componentDidMount() {
     this.loadQuizData();
   }
+
   nextQuestionHandler = () => {
     const { myAnswer, answer, score } = this.state;
+    console.log(myAnswer);
+    if (myAnswer === null) {
+      alert("Please choose an answer");
+    } else {
+      this.setState({
+        currentQuestion: this.state.currentQuestion + 1,
+      });
+      console.log(this.state.currentQuestion);
+    }
 
     if (myAnswer === answer) {
       this.setState({
         score: score + 1,
       });
     }
-
-    this.setState({
-      currentQuestion: this.state.currentQuestion + 1,
-    });
-    console.log(this.state.currentQuestion);
   };
 
   componentDidUpdate(prevProps, prevState) {
@@ -95,7 +100,7 @@ class MainQuiz extends React.Component {
           {options.map((option) => (
             <p
               key={option.id}
-              className={`ui floating message options
+              className={`options
          ${myAnswer === option ? "selected" : null}
          `}
               onClick={() => this.checkAnswer(option)}
@@ -112,7 +117,6 @@ class MainQuiz extends React.Component {
               Next
             </button>
           )}
-          {/* //adding a finish button */}
           {currentQuestion === quizData.length - 1 && (
             <button className="button" onClick={this.finishHandler}>
               Finish

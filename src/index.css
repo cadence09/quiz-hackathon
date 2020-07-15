@@ -67,6 +67,7 @@ p {
 }
 
 .button {
+  cursor: pointer;
   background-color: #bea483;
   border: none;
   border-radius: 15px;
@@ -76,4 +77,6 @@ p {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  outline: none;
+  box-shadow: none;
 }
