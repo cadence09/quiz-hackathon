@@ -30,11 +30,11 @@ export const quizData = [
   {
     id: 3,
     question:
-      "If we declare a variable, let test = 1, then later, reassign, stating test = 2, what will happen?",
+      "If we declare a variable, let test = 1, then reassign it to test = 2, what will happen?",
     options: [
       "test will equal 2",
       "test will equal 1",
-      "JavaScript will raise a TypeError",
+      "a TypeError will occur",
       "test will equal undefined",
     ],
     answer: "test will equal 2",
@@ -42,53 +42,53 @@ export const quizData = [
 
   {
     id: 4,
-    question: "What does undefined value mean in javascript?",
+    question: "What does `undefined` mean in JavaScript?",
     options: [
       "undefined means a variable has been declared but has not yet been assigned a value",
       "undefined means function didn’t return any value",
-      "All above",
-      "None of above",
+      "All of the above",
+      "None of the above",
     ],
-    answer: "All of above",
+    answer: "All of the above",
   },
   {
     id: 5,
     question:
-      "In your JavaScript code, how do you find out which character occurs at the 5th position in a string, How are you?",
+      "In JavaScript, how do you find out which character occurs at the 5th position in a string, `How are you?`",
     options: ["Substring()", " String()", "Stringlength()", " CharAt()"],
-    answer: "ChatAt()",
+    answer: "CharAt()",
   },
 
   {
     id: 6,
     question:
-      "How do you prompt users with messages and at the same time requesting user inputs?",
+      "How do you prompt users with messages and at the same time requesting user input?",
     options: ["Alert()", "Display()", " Prompt()", "Confirm()"],
     answer: "Prompt()",
   },
   {
     id: 7,
-    question: "How to debug JavaScript",
+    question: "How to debug a code in JavaScript?",
     options: [
       "Use breakpoints on Chrome DevTool",
       "console.log()",
       "debugger",
-      "All of above",
-      "None of Above",
+      "All of the above",
+      "None of the above",
     ],
-    answer: "All of above",
+    answer: "All of the above",
   },
   {
     id: 8,
-    question: "What is difference between agrument and parameter?",
+    question: "What is the difference between an agrument and a parameter?",
     options: [
       "Agrument is a variable declared in a function, but parameter is an actual value that is passed to the function",
       "Parameter is a variable declared in a function, but agrument is an actual value that is passed to the function",
-      "All of above",
-      "None of above",
+      "All of the above",
+      "None of the above",
     ],
     answer:
-      "Parameter is a variable declare in a function, but agrument is a actual value that pass to function",
+      "Parameter is a variable declared in a function, but agrument is an actual value that is passed to the function",
   },
   {
     id: 9,
@@ -98,7 +98,7 @@ export const quizData = [
   },
   {
     id: 10,
-    question: "Is Javascript not asynchronous",
+    question: "Javascript is not asynchronous",
     options: ["True", "False"],
     answer: "False",
   },
@@ -110,33 +110,21 @@ export const quizData = [
       "Let and const keyword",
       "Arrow function",
       "B and C, but not A",
-      "All of above",
-      "None of Above",
+      "All of the above",
+      "None of the above",
     ],
-    answer: "All of Above",
+    answer: "All of the above",
   },
   {
     id: 12,
     question: "What is lexical scope?",
     options: [
-      "A variable can be access by all other functions ",
-      "A variable can be only determined by the region where it creates and define",
-      "All of above",
-      "None of above",
+      "A variable that can be accessed by all other functions",
+      "A variable that can only be determined by the region where it's created and defined",
+      "All of the above",
+      "None of the above",
     ],
     answer:
-      "A variable can be only determined by the region where it creates and define",
-  },
-  {
-    id: 13,
-    question: "What is lexical scope?",
-    options: [
-      "A variable can be access by all other functions ",
-      "A variable can be only determined by the region where it creates and define",
-      "All of above",
-      "None of above",
-    ],
-    answer:
-      "A variable can be only determined by the region where it creates and define",
+      "A variable that can only be determined by the region where it's created and defined",
   },
 ];
