@@ -2,7 +2,7 @@ import React from "react";
 import { quizData } from "./quizData";
 
 class MainQuiz extends React.Component {
-  state = {
+   state = {
     currentQuestion: 0,
     myAnswer: null,
     options: [],
@@ -52,6 +52,10 @@ class MainQuiz extends React.Component {
         };
       });
     }
+    // if(this.state.isEnd){
+
+    //    this.setState({isEnd:false})
+    // }
   }
   //check answer
   checkAnswer = (answer) => {
@@ -66,9 +70,16 @@ class MainQuiz extends React.Component {
     if (this.state.myAnswer === this.state.answer) {
       this.setState({
         score: this.state.score + 1,
-      });
+      });  
     }
   };
+  
+  restart = ()=>{
+    this.setState({ currentQuestion:0})
+
+  
+    
+  }
   render() {
     const { options, myAnswer, currentQuestion, isEnd } = this.state;
 
@@ -84,6 +95,7 @@ class MainQuiz extends React.Component {
               </div>
             ))}
           </div>
+          
         </div>
       );
     } else {
@@ -119,6 +131,11 @@ class MainQuiz extends React.Component {
               Finish
             </button>
           )}
+          {/* {isEnd === true&& (
+           <button className='Button' type='reset' onClick={this.restart}>
+           Start Over
+         </button>
+          )} */}
         </div>
       );
     }
