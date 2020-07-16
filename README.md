@@ -1,5 +1,5 @@
 # Quiz for Major League Hacking (MLH) Hackathon
 
-Quiz that uses Inspect JS to test and improve one's knowledge on JavaScript.
+A JavaScript Quiz to test and improve one's knowledge on the language. Uses InspectJS as part of the project.
 
 App written using React.js
