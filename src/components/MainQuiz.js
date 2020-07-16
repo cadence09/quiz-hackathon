@@ -131,11 +131,6 @@ class MainQuiz extends React.Component {
               Finish
             </button>
           )}
-          {/* {isEnd === true&& (
-           <button className='Button' type='reset' onClick={this.restart}>
-           Start Over
-         </button>
-          )} */}
         </div>
       );
     }
