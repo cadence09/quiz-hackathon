@@ -1,5 +1,7 @@
-# Quiz for Major League Hacking (MLH) Hackathon
+# JavaScript Quiz for Hackathon
 
-A JavaScript Quiz to test and improve one's knowledge on the language. Uses InspectJS as part of the project.
+JavaScript Quiz is a project for Major League Hacking (MLH) Fellowship.
 
-App written using React.js
+The quiz lets users test and improve their knowledge of JS language.
+
+App is written in React.js and uses Inspect JS.
