@@ -22,7 +22,7 @@ export const quizData = [
 
   {
     id: 2,
-    question: "What thread is JavaScript",
+    question: "What thread is JavaScript?",
     options: ["single thread", "multithread", "none of above"],
     answer: "single thread",
   },

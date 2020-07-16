@@ -82,7 +82,7 @@ class MainQuiz extends React.Component {
           <p>Correct answers:</p>
           <div>
             {quizData.map((item, index) => (
-              <div className="ui floating message options" key={index}>
+              <div className="options" key={index}>
                 {item.answer}
               </div>
             ))}
@@ -92,7 +92,10 @@ class MainQuiz extends React.Component {
     } else {
       return (
         <div className="App">
-          <h1 className="title">Quiz</h1>
+          <header>
+            <h1 className="title">Quiz</h1>
+            <h4 className="tagline">Test your JavaScript knowledge</h4>
+          </header>
           <h1>{this.state.questions} </h1>
           <span>{`Questions ${currentQuestion}  out of ${
             quizData.length - 1
