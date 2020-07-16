@@ -1,9 +1,9 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import { quizData } from './components/quizData';
+let inspect = require('inspect.js');
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+describe('quizData', function() {
+  it('checks if file is a JSON object', () =>{
+      inspect(quizData).isJSON();
+  })
 });
