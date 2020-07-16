@@ -1,13 +1,14 @@
 body {
-  margin: 0;
-  background-color: #ddeeee;
+  background-color: #e0eeee;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 8em;
+  margin-top: 2em;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 code {
@@ -18,27 +19,65 @@ code {
 h1 {
   font-family: "Quicksand", sans-serif;
   color: #5e7e84;
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 60px;
+}
+
+h4 {
+  font-family: "Quicksand", sans-serif;
+  color: #b89b76;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title {
+  font-family: "Quicksand", sans-serif;
+  color: #b89b76;
+  font-size: 45px;
+  margin-bottom: 60px;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+header {
+  text-align: left;
+}
+
+.tagline {
+  display: inline-block;
+}
+
+h3 {
+  font-family: "Quicksand", sans-serif;
+  color: #b89b76;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  color: #bea380;
+  font-size: 20px;
+  margin-bottom: 1em;
 }
 
 .App {
   font-family: sans-serif;
   text-align: center;
-  color: #5e7e84;
   color: #b89b76;
 }
 
 .options {
+  font-family: sans-serif;
   cursor: pointer;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
   border: 4px solid white;
   border-radius: 15px;
   padding: 10px;
-  margin-left: 300px;
-  margin-right: 300px;
-  color: #47666b;
+  margin-left: 350px;
+  margin-right: 350px;
+  color: #5e7e84;
 }
 
 .selected {
@@ -46,6 +85,7 @@ h1 {
 }
 
 .button {
+  cursor: pointer;
   background-color: #bea483;
   border: none;
   border-radius: 15px;
@@ -55,4 +95,10 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  outline: none;
+  box-shadow: none;
+}
+
+.button:hover {
+  background-color: #a58862;
 }

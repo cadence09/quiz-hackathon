@@ -7,12 +7,11 @@ class MainQuiz extends React.Component {
     myAnswer: null,
     options: [],
     score: 0,
-    disabled: true,
+    disabled: false,
     isEnd: false,
   };
 
   loadQuizData = () => {
-    // console.log(quizData[0].question)
     this.setState(() => {
       return {
         questions: quizData[this.state.currentQuestion].question,
@@ -25,20 +24,24 @@ class MainQuiz extends React.Component {
   componentDidMount() {
     this.loadQuizData();
   }
+
   nextQuestionHandler = () => {
-    // console.log('test')
     const { myAnswer, answer, score } = this.state;
+    console.log(myAnswer);
+    if (myAnswer === null) {
+      alert("Please choose an answer");
+    } else {
+      this.setState({
+        currentQuestion: this.state.currentQuestion + 1,
+      });
+      console.log(this.state.currentQuestion);
+    }
 
     if (myAnswer === answer) {
       this.setState({
         score: score + 1,
       });
     }
-
-    this.setState({
-      currentQuestion: this.state.currentQuestion + 1,
-    });
-    console.log(this.state.currentQuestion);
   };
 
   componentDidUpdate(prevProps, prevState) {
@@ -57,7 +60,7 @@ class MainQuiz extends React.Component {
     //    this.setState({isEnd:false})
     // }
   }
-  //check answer
+
   checkAnswer = (answer) => {
     this.setState({ myAnswer: answer, disabled: false });
   };
@@ -87,10 +90,10 @@ class MainQuiz extends React.Component {
       return (
         <div className="result">
           <h3>Your final score is {this.state.score} points </h3>
+          <p>Correct answers:</p>
           <div>
-            The correct answers were:
             {quizData.map((item, index) => (
-              <div className="ui floating message options" key={index}>
+              <div className="options" key={index}>
                 {item.answer}
               </div>
             ))}
@@ -101,6 +104,10 @@ class MainQuiz extends React.Component {
     } else {
       return (
         <div className="App">
+          <header>
+            <h1 className="title">Quiz</h1>
+            <h4 className="tagline">Test your JavaScript knowledge</h4>
+          </header>
           <h1>{this.state.questions} </h1>
           <span>{`Questions ${currentQuestion}  out of ${
             quizData.length - 1
@@ -108,7 +115,7 @@ class MainQuiz extends React.Component {
           {options.map((option) => (
             <p
               key={option.id}
-              className={`ui floating message options
+              className={`options
          ${myAnswer === option ? "selected" : null}
          `}
               onClick={() => this.checkAnswer(option)}
@@ -118,16 +125,15 @@ class MainQuiz extends React.Component {
           ))}
           {currentQuestion < quizData.length - 1 && (
             <button
-              className="ui inverted button"
+              className="button"
               disabled={this.state.disabled}
               onClick={this.nextQuestionHandler}
             >
               Next
             </button>
           )}
-          {/* //adding a finish button */}
           {currentQuestion === quizData.length - 1 && (
-            <button className="ui inverted button" onClick={this.finishHandler}>
+            <button className="button" onClick={this.finishHandler}>
               Finish
             </button>
           )}
