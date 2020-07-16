@@ -1,9 +1,12 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import MainQuiz from "./components/MainQuiz"
+let inspect=require('inspect.js')
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+describe('MyClass', function() {
+  it('first unit test', ()=>{
+    
+    inspect(MainQuiz).isClass();
+})
+  })
+  
