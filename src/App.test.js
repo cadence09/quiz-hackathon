@@ -7,3 +7,11 @@ describe('quizData', function() {
       inspect(quizData).isJSON();
   })
 });
+
+
+describe('MyClass', function() {
+  it('first unit test', ()=>{
+
+    inspect(MainQuiz).isClass();
+})
+  })
