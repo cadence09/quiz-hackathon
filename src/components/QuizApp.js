@@ -1,8 +1,8 @@
 import React from "react";
-import { quizData } from "./quizData";
+import { questionsAndAnswers } from "./questionsAndAnswers";
 
-class MainQuiz extends React.Component {
-   state = {
+class QuizApp extends React.Component {
+  state = {
     currentQuestion: 0,
     myAnswer: null,
     options: [],
@@ -11,18 +11,18 @@ class MainQuiz extends React.Component {
     isEnd: false,
   };
 
-  loadQuizData = () => {
+  loadQuestionsAndAnswers = () => {
     this.setState(() => {
       return {
-        questions: quizData[this.state.currentQuestion].question,
-        answer: quizData[this.state.currentQuestion].answer,
-        options: quizData[this.state.currentQuestion].options,
+        questions: questionsAndAnswers[this.state.currentQuestion].question,
+        answer: questionsAndAnswers[this.state.currentQuestion].answer,
+        options: questionsAndAnswers[this.state.currentQuestion].options,
       };
     });
   };
 
   componentDidMount() {
-    this.loadQuizData();
+    this.loadQuestionsAndAnswers();
   }
 
   nextQuestionHandler = () => {
@@ -49,20 +49,19 @@ class MainQuiz extends React.Component {
       this.setState(() => {
         return {
           disabled: true,
-          questions: quizData[this.state.currentQuestion].question,
-          options: quizData[this.state.currentQuestion].options,
-          answer: quizData[this.state.currentQuestion].answer,
+          questions: questionsAndAnswers[this.state.currentQuestion].question,
+          options: questionsAndAnswers[this.state.currentQuestion].options,
+          answer: questionsAndAnswers[this.state.currentQuestion].answer,
         };
       });
     }
-
   }
 
   checkAnswer = (answer) => {
     this.setState({ myAnswer: answer, disabled: false });
   };
   finishHandler = () => {
-    if (this.state.currentQuestion === quizData.length - 1) {
+    if (this.state.currentQuestion === questionsAndAnswers.length - 1) {
       this.setState({
         isEnd: true,
       });
@@ -70,10 +69,10 @@ class MainQuiz extends React.Component {
     if (this.state.myAnswer === this.state.answer) {
       this.setState({
         score: this.state.score + 1,
-      });  
+      });
     }
   };
-  
+
   render() {
     const { options, myAnswer, currentQuestion, isEnd } = this.state;
 
@@ -83,13 +82,12 @@ class MainQuiz extends React.Component {
           <h3>Your final score is {this.state.score} points </h3>
           <p>Correct answers:</p>
           <div>
-            {quizData.map((item, index) => (
+            {questionsAndAnswers.map((item, index) => (
               <div className="options" key={index}>
                 {item.answer}
               </div>
             ))}
           </div>
-          
         </div>
       );
     } else {
@@ -101,7 +99,7 @@ class MainQuiz extends React.Component {
           </header>
           <h1>{this.state.questions} </h1>
           <span>{`Questions ${currentQuestion}  out of ${
-            quizData.length - 1
+            questionsAndAnswers.length - 1
           } remaining `}</span>
           {options.map((option) => (
             <p
@@ -114,7 +112,7 @@ class MainQuiz extends React.Component {
               {option}
             </p>
           ))}
-          {currentQuestion < quizData.length - 1 && (
+          {currentQuestion < questionsAndAnswers.length - 1 && (
             <button
               className="button"
               disabled={this.state.disabled}
@@ -123,7 +121,7 @@ class MainQuiz extends React.Component {
               Next
             </button>
           )}
-          {currentQuestion === quizData.length - 1 && (
+          {currentQuestion === questionsAndAnswers.length - 1 && (
             <button className="button" onClick={this.finishHandler}>
               Finish
             </button>
@@ -134,4 +132,4 @@ class MainQuiz extends React.Component {
   }
 }
 
-export default MainQuiz;
+export default QuizApp;

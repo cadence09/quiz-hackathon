@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.css";
-import MainQuiz from "./components/MainQuiz";
+import QuizApp from "./components/QuizApp";
 
 function App() {
   return (
     <div className="App">
-      <MainQuiz />
+      <QuizApp />
     </div>
   );
 }

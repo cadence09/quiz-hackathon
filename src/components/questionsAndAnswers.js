@@ -1,4 +1,4 @@
-export const quizData = [
+export const questionsAndAnswers = [
   {
     id: 0,
     question: "Which of the following is correct about callbacks?",
@@ -22,13 +22,6 @@ export const quizData = [
 
   {
     id: 2,
-    question: "What thread is JavaScript?",
-    options: ["single thread", "multithread", "none of above"],
-    answer: "single thread",
-  },
-
-  {
-    id: 3,
     question:
       "If we declare a variable, let test = 1, then reassign it to test = 2, what will happen?",
     options: [
@@ -41,7 +34,7 @@ export const quizData = [
   },
 
   {
-    id: 4,
+    id: 3,
     question: "What does `undefined` mean in JavaScript?",
     options: [
       "undefined means a variable has been declared but has not yet been assigned a value",
@@ -52,22 +45,22 @@ export const quizData = [
     answer: "All of the above",
   },
   {
-    id: 5,
+    id: 4,
     question:
-      "In JavaScript, how do you find out which character occurs at the 5th position in a string, `How are you?`",
+      "How do you find out which character occurs at the 5th position in a string `How are you`?",
     options: ["Substring()", " String()", "Stringlength()", " CharAt()"],
     answer: "CharAt()",
   },
 
   {
-    id: 6,
+    id: 5,
     question:
       "How do you prompt users with messages and at the same time requesting user input?",
     options: ["Alert()", "Display()", " Prompt()", "Confirm()"],
     answer: "Prompt()",
   },
   {
-    id: 7,
+    id: 6,
     question: "How to debug a code in JavaScript?",
     options: [
       "Use breakpoints on Chrome DevTool",
@@ -79,7 +72,7 @@ export const quizData = [
     answer: "All of the above",
   },
   {
-    id: 8,
+    id: 7,
     question: "What is the difference between an agrument and a parameter?",
     options: [
       "Agrument is a variable declared in a function, but parameter is an actual value that is passed to the function",
@@ -91,19 +84,19 @@ export const quizData = [
       "Parameter is a variable declared in a function, but agrument is an actual value that is passed to the function",
   },
   {
-    id: 9,
+    id: 8,
     question: "setTimeOut() is executed by Web API",
     options: ["True", "False"],
     answer: "True",
   },
   {
-    id: 10,
+    id: 9,
     question: "Javascript is not asynchronous",
     options: ["True", "False"],
     answer: "False",
   },
   {
-    id: 11,
+    id: 10,
     question: "What is new in ES6?",
     options: [
       "Symbol data type",
@@ -116,7 +109,7 @@ export const quizData = [
     answer: "All of the above",
   },
   {
-    id: 12,
+    id: 11,
     question: "What is lexical scope?",
     options: [
       "A variable that can be accessed by all other functions",
