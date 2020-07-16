@@ -88,6 +88,9 @@ class QuizApp extends React.Component {
               </div>
             ))}
           </div>
+          <button className="button">Start Over</button>
+          <br />
+          <br />
         </div>
       );
     } else {
