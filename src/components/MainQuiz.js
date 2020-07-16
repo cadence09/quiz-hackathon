@@ -55,10 +55,7 @@ class MainQuiz extends React.Component {
         };
       });
     }
-    // if(this.state.isEnd){
 
-    //    this.setState({isEnd:false})
-    // }
   }
 
   checkAnswer = (answer) => {
@@ -77,12 +74,6 @@ class MainQuiz extends React.Component {
     }
   };
   
-  restart = ()=>{
-    this.setState({ currentQuestion:0})
-
-  
-    
-  }
   render() {
     const { options, myAnswer, currentQuestion, isEnd } = this.state;
 
