@@ -3,12 +3,12 @@ export const questionsAndAnswers = [
     id: 0,
     question: "Which of the following is correct about callbacks?",
     options: [
-      "A callback is a function that is passed to another function as an argument.",
+      "A callback is a function that is passed to another function as an argument",
       "A callback is not a function that is passed to another function as an argument",
       "None of above",
     ],
     answer: [
-      "A callback is a function that is passed to another function as an argument.",
+      "A callback is a function that is passed to another function as an argument",
     ],
   },
 
@@ -17,19 +17,6 @@ export const questionsAndAnswers = [
     question: "Which of the following functions converts a number to a string?",
     options: ["toString()", "toFixed()", "toLocaleString()", "toPrecision()"],
     answer: "toString()",
-  },
-
-  {
-    id: 2,
-    question:
-      "If we declare a variable, let test = 1, then reassign it to test = 2, what will happen?",
-    options: [
-      "test will equal 2",
-      "test will equal 1",
-      "a TypeError will occur",
-      "test will equal undefined",
-    ],
-    answer: "test will equal 2",
   },
 
   {
@@ -43,23 +30,29 @@ export const questionsAndAnswers = [
     ],
     answer: "All of the above",
   },
+
   {
     id: 3,
     question:
-      "How do you find out which character occurs at the 5th position in a string `How are you`?",
-    options: ["Substring()", " String()", "Stringlength()", " CharAt()"],
-    answer: "CharAt()",
+      "If we declare a variable, let test = 1, then reassign it to test = 2, what will happen?",
+    options: [
+      "test will equal 2",
+      "test will equal 1",
+      "a TypeError will occur",
+      "test will equal undefined",
+    ],
+    answer: "test will equal 2",
+  },
+
+  {
+    id: 4,
+    question: "setTimeOut() is executed by a Web API",
+    options: ["True", "False"],
+    answer: "True",
   },
 
   {
     id: 5,
-    question:
-      "How do you prompt users with messages and at the same time request user input?",
-    options: ["Alert()", "Display()", " Prompt()", "Confirm()"],
-    answer: "Prompt()",
-  },
-  {
-    id: 6,
     question: "How do you debug code in JavaScript?",
     options: [
       "Use breakpoints on Chrome DevTool",
@@ -70,8 +63,24 @@ export const questionsAndAnswers = [
     ],
     answer: "All of the above",
   },
+
+  {
+    id: 6,
+    question:
+      "How do you prompt users with messages and at the same time request user input?",
+    options: ["Alert()", "Display()", " Prompt()", "Confirm()"],
+    answer: "Prompt()",
+  },
+
   {
     id: 7,
+    question: "Javascript is not asynchronous",
+    options: ["True", "False"],
+    answer: "False",
+  },
+
+  {
+    id: 8,
     question: "What is the difference between an argument and a parameter?",
     options: [
       "An argument is a variable declared in a function, a parameter is an actual value that is passed to the function",
@@ -82,20 +91,16 @@ export const questionsAndAnswers = [
     answer:
       "A parameter is a variable declared in a function, an argument is an actual value that is passed to the function",
   },
+
   {
-    id: 8,
-    question: "setTimeOut() is executed by a Web API",
+    id: 9,
+    question: "setTimeOut() is executed by Web API",
     options: ["True", "False"],
     answer: "True",
   },
+
   {
-    id: 9,
-    question: "Javascript is not asynchronous",
-    options: ["True", "False"],
-    answer: "False",
-  },
-  {
-    id: 8,
+    id: 10,
     question: "What is new in ES6?",
     options: [
       "Symbol data type",
@@ -107,14 +112,17 @@ export const questionsAndAnswers = [
     ],
     answer: "All of the above",
   },
+
   {
-    id: 9,
-    question: "setTimeOut() is executed by Web API",
-    options: ["True", "False"],
-    answer: "True",
+    id: 11,
+    question:
+      "How do you find out which character occurs at the 5th position in a string `How are you`?",
+    options: ["Substring()", " String()", "Stringlength()", " CharAt()"],
+    answer: "CharAt()",
   },
+
   {
-    id: 10,
+    id: 12,
     question: "What is lexical scope?",
     options: [
       "A variable that can be accessed by all other functions",
