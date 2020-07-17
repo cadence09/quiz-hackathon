@@ -4,6 +4,9 @@ import { questionsAndAnswers } from "./questionsAndAnswers";
 class QuizApp extends React.Component {
   constructor() {
     super();
+    this.mediaQuery = {
+      desktop: 600,
+    };
     this.state = {
       currentQuestion: 0,
       myAnswer: null,
@@ -123,7 +126,7 @@ class QuizApp extends React.Component {
           <span>{`Questions ${currentQuestion}  out of ${
             questionsAndAnswers.length - 1
           } remaining `}</span>
-          {options.map((option) => (
+       {options.map((option) => (
             <p
               key={option.id}
               className={`options
