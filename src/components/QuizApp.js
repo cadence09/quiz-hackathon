@@ -2,14 +2,17 @@ import React from "react";
 import { questionsAndAnswers } from "./questionsAndAnswers";
 
 class QuizApp extends React.Component {
-  state = {
-    currentQuestion: 0,
-    myAnswer: null,
-    options: [],
-    score: 0,
-    disabled: false,
-    isEnd: false,
-  };
+  constructor() {
+    super();
+    this.state = {
+      currentQuestion: 0,
+      myAnswer: null,
+      options: [],
+      score: 0,
+      disabled: false,
+      isEnd: false,
+    };
+  }
 
   loadQuestionsAndAnswers = () => {
     this.setState(() => {
@@ -60,6 +63,7 @@ class QuizApp extends React.Component {
   checkAnswer = (answer) => {
     this.setState({ myAnswer: answer, disabled: false });
   };
+
   finishHandler = () => {
     if (this.state.currentQuestion === questionsAndAnswers.length - 1) {
       this.setState({
@@ -71,6 +75,19 @@ class QuizApp extends React.Component {
         score: this.state.score + 1,
       });
     }
+  };
+
+  startOver = (event) => {
+    event.preventDefault();
+    this.setState({
+      ...this.state,
+      currentQuestion: 0,
+      myAnswer: null,
+      options: [],
+      score: 0,
+      disabled: false,
+      isEnd: false,
+    });
   };
 
   render() {
@@ -88,7 +105,9 @@ class QuizApp extends React.Component {
               </div>
             ))}
           </div>
-          <button className="button">Start Over</button>
+          <button className="button" type="reset" onClick={this.startOver}>
+            Start Over
+          </button>
           <br />
           <br />
         </div>

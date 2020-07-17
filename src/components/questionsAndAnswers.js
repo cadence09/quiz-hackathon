@@ -34,7 +34,7 @@ export const questionsAndAnswers = [
   },
 
   {
-    id: 3,
+    id: 2,
     question: "What does `undefined` mean in JavaScript?",
     options: [
       "Undefined means a variable has been declared but has not yet been assigned a value",
@@ -45,7 +45,7 @@ export const questionsAndAnswers = [
     answer: "All of the above",
   },
   {
-    id: 4,
+    id: 3,
     question:
       "How do you find out which character occurs at the 5th position in a string `How are you`?",
     options: ["Substring()", " String()", "Stringlength()", " CharAt()"],
@@ -96,7 +96,7 @@ export const questionsAndAnswers = [
     answer: "False",
   },
   {
-    id: 10,
+    id: 8,
     question: "What is new in ES6?",
     options: [
       "Symbol data type",
@@ -109,7 +109,13 @@ export const questionsAndAnswers = [
     answer: "All of the above",
   },
   {
-    id: 11,
+    id: 9,
+    question: "setTimeOut() is executed by Web API",
+    options: ["True", "False"],
+    answer: "True",
+  },
+  {
+    id: 10,
     question: "What is lexical scope?",
     options: [
       "A variable that can be accessed by all other functions",
