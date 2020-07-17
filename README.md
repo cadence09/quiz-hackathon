@@ -1,6 +1,4 @@
 # JavaScript Quiz for Hackathon
-
-# Introduction
 JavaScript Quiz is a project for Major League Hacking (MLH) Fellowship.
 
 The quiz lets users test and improve their knowledge of JS language.
@@ -14,7 +12,9 @@ The quiz lets users test and improve their knowledge of JS language.
   
 # Installation
   * Clone my repo <br/>
-    * git clone "my repo link"
-  * NPM install
-  * NPM start
+    * Git clone "my repo link"
+  * NPM install <br/>
+    * Install all dependencies 
+  * NPM start <br/>
+    * Enjoy the app
 
