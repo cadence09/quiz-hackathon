@@ -3,19 +3,18 @@ export const questionsAndAnswers = [
     id: 0,
     question: "Which of the following is correct about callbacks?",
     options: [
-      "A callback is a function that passes to another function as an argument.",
-      "A callback is not a function that passes to another function as an argument",
+      "A callback is a function that is passed to another function as an argument.",
+      "A callback is not a function that is passed to another function as an argument",
       "None of above",
     ],
     answer: [
-      "A callback is a function that passes to another function as an argument.",
+      "A callback is a function that is passed to another function as an argument.",
     ],
   },
 
   {
     id: 1,
-    question:
-      "Which of the following functions of Number object returns a string value version of the current number?",
+    question: "Which of the following functions converts a number to a string?",
     options: ["toString()", "toFixed()", "toLocaleString()", "toPrecision()"],
     answer: "toString()",
   },
