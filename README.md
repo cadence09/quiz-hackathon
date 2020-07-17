@@ -13,7 +13,7 @@ The quiz lets users test and improve their knowledge of JS language.
   * Inspect.js(test automation)
   
 # Installation
-  * Clone my repo 
+  * Clone my repo <br/>
     ** git clone "my repo link"
   * NPM install
   * NPM start
