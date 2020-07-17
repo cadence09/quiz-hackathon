@@ -46,13 +46,6 @@ export const questionsAndAnswers = [
 
   {
     id: 4,
-    question:
-      "How do you prompt users with messages and at the same time requesting user input?",
-    options: ["Alert()", "Display()", " Prompt()", "Confirm()"],
-    answer: "Prompt()",
-  },
-  {
-    id: 5,
     question: "How to debug a code in JavaScript?",
     options: [
       "Use breakpoints on Chrome DevTool",
@@ -62,6 +55,13 @@ export const questionsAndAnswers = [
       "None of the above",
     ],
     answer: "All of the above",
+  },
+  {
+    id: 5,
+    question:
+      "How do you prompt users with messages and at the same time requesting user input?",
+    options: ["Alert()", "Display()", " Prompt()", "Confirm()"],
+    answer: "Prompt()",
   },
   {
     id: 6,
@@ -77,18 +77,12 @@ export const questionsAndAnswers = [
   },
   {
     id: 7,
-    question: "setTimeOut() is executed by Web API",
-    options: ["True", "False"],
-    answer: "True",
-  },
-  {
-    id: 8,
     question: "Javascript is not asynchronous",
     options: ["True", "False"],
     answer: "False",
   },
   {
-    id: 9,
+    id: 8,
     question: "What is new in ES6?",
     options: [
       "Symbol data type",
@@ -99,6 +93,12 @@ export const questionsAndAnswers = [
       "None of the above",
     ],
     answer: "All of the above",
+  },
+  {
+    id: 9,
+    question: "setTimeOut() is executed by Web API",
+    options: ["True", "False"],
+    answer: "True",
   },
   {
     id: 10,
