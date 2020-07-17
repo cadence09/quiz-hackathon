@@ -10,7 +10,7 @@ The quiz lets users test and improve their knowledge of JS language.
 
 - React
 - CSS
-- Inspect.js
+- Inspect JS
 
 # Installation
 
