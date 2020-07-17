@@ -67,7 +67,7 @@ p {
   color: #b89b76;
 }
 
- .options {
+.options {
   font-family: sans-serif;
   cursor: pointer;
   font-size: 18px;
@@ -75,7 +75,7 @@ p {
   border-radius: 15px;
   padding: 10px;
   color: #5e7e84;
-} 
+}
 
 .selected {
   background: #e9e0d1;
@@ -101,9 +101,8 @@ p {
   background-color: #a58862;
 }
 
-
-@media only screen and (min-width:700px){
-  .options{
-    margin:2% 26%;
+@media only screen and (min-width: 700px) {
+  .options {
+    margin: 2% 26%;
   }
 }
