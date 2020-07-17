@@ -15,6 +15,14 @@ export const questionsAndAnswers = [
   {
     id: 1,
     question:
+      "Which of the following functions of Number object returns a string value version of the current number?",
+    options: ["toString()", "toFixed()", "toLocaleString()", "toPrecision()"],
+    answer: "toString()",
+  },
+
+  {
+    id: 2,
+    question:
       "If we declare a variable, let test = 1, then reassign it to test = 2, what will happen?",
     options: [
       "test will equal 2",
@@ -29,8 +37,8 @@ export const questionsAndAnswers = [
     id: 2,
     question: "What does `undefined` mean in JavaScript?",
     options: [
-      "undefined means a variable has been declared but has not yet been assigned a value",
-      "undefined means function didn’t return any value",
+      "Undefined means a variable has been declared but has not yet been assigned a value",
+      "Undefined means a function didn’t return any value",
       "All of the above",
       "None of the above",
     ],
@@ -45,38 +53,44 @@ export const questionsAndAnswers = [
   },
 
   {
-    id: 4,
-    question: "How to debug a code in JavaScript?",
+    id: 5,
+    question:
+      "How do you prompt users with messages and at the same time request user input?",
+    options: ["Alert()", "Display()", " Prompt()", "Confirm()"],
+    answer: "Prompt()",
+  },
+  {
+    id: 6,
+    question: "How do you debug code in JavaScript?",
     options: [
       "Use breakpoints on Chrome DevTool",
-      "console.log()",
-      "debugger",
+      "Console.log()",
+      "Debugger",
       "All of the above",
       "None of the above",
     ],
     answer: "All of the above",
   },
   {
-    id: 5,
-    question:
-      "How do you prompt users with messages and at the same time requesting user input?",
-    options: ["Alert()", "Display()", " Prompt()", "Confirm()"],
-    answer: "Prompt()",
-  },
-  {
-    id: 6,
-    question: "What is the difference between an agrument and a parameter?",
+    id: 7,
+    question: "What is the difference between an argument and a parameter?",
     options: [
-      "Agrument is a variable declared in a function, but parameter is an actual value that is passed to the function",
-      "Parameter is a variable declared in a function, but agrument is an actual value that is passed to the function",
+      "An argument is a variable declared in a function, a parameter is an actual value that is passed to the function",
+      "A parameter is a variable declared in a function, an argument is an actual value that is passed to the function",
       "All of the above",
       "None of the above",
     ],
     answer:
-      "Parameter is a variable declared in a function, but agrument is an actual value that is passed to the function",
+      "A parameter is a variable declared in a function, an argument is an actual value that is passed to the function",
   },
   {
-    id: 7,
+    id: 8,
+    question: "setTimeOut() is executed by a Web API",
+    options: ["True", "False"],
+    answer: "True",
+  },
+  {
+    id: 9,
     question: "Javascript is not asynchronous",
     options: ["True", "False"],
     answer: "False",
@@ -86,7 +100,7 @@ export const questionsAndAnswers = [
     question: "What is new in ES6?",
     options: [
       "Symbol data type",
-      "Let and const keyword",
+      "The let and const keywords",
       "Arrow function",
       "B and C, but not A",
       "All of the above",
