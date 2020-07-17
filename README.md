@@ -14,7 +14,7 @@ The quiz lets users test and improve their knowledge of JS language.
   
 # Installation
   * Clone my repo <br/>
-    ** git clone "my repo link"
+    * git clone "my repo link"
   * NPM install
   * NPM start
 
