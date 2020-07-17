@@ -8,7 +8,7 @@ The quiz lets users test and improve their knowledge of JS language.
 ## Build with
   * React
   * CSS
-  * Inspect.js(test automation)
+  * Inspect.js
   
 # Installation
   * Clone my repo <br/>
