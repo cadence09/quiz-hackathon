@@ -13,6 +13,6 @@ describe("questionsAndAnswers", function () {
 describe('MyClass', function() {
   it('first unit test', ()=>{
 
-    inspect(MainQuiz).isClass();
+    inspect(QuizApp).isClass();
 })
   })
