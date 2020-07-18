@@ -1,9 +1,18 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import QuizApp from "./components/QuizApp";
+import { questionsAndAnswers } from "./components/questionsAndAnswers";
+let inspect = require("inspect.js");
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+describe("questionsAndAnswers", function () {
+  it("checks if file is a JSON object", () => {
+    inspect(questionsAndAnswers).isJSON();
+  });
 });
+
+
+describe('MyClass', function() {
+  it('first unit test', ()=>{
+
+    inspect(QuizApp).isClass();
+})
+  })
